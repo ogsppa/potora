@@ -1,0 +1,57 @@
+h1 {
+page-break-before: always;
+}
+
+h2 {
+page-break-before: always;
+}
+
+ul {
+list-style: none;
+padding-left: 0;
+}
+
+ul li::before {
+content: "- ";  /* または "* " に変更も可能 */
+margin-right: 4px;
+}
+
+/* 行間を全体的に少し広げる */
+body, html {
+line-height: 1.7;
+}
+  
+/* 明示的に段落にも指定しておくと安定 */
+p {
+line-height: 1.7;
+margin-bottom: 1em;
+}
+
+/* コードブロック（highlight.js のスタイル）も調整 */
+.hljs {
+line-height: 1.7;
+}
+
+/* 通常のリンク色を淡いブルーに変更 */
+a {
+color: #3b6ea5;  /* 標準の #0366d6 より淡い青 */
+text-decoration: underline;  /* お好みで */
+}
+
+/* h2 に背景色とパディング */
+h2 {
+background-color: #e0e0e0;  /* 薄いグレー */
+padding: 8px 12px;
+border-radius: 4px;         /* 角を少し丸く */
+margin-top: 2em;
+margin-bottom: 1em;
+}
+
+/* h3 は少し薄めの色に */
+h3 {
+background-color: #f0f0f0;  /* もっと淡いグレー */
+padding: 6px 10px;
+border-radius: 4px;
+margin-top: 1.5em;
+margin-bottom: 0.75em;
+}
